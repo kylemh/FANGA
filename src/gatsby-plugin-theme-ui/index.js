@@ -23,4 +23,5 @@ export default {
     heading: "Avenir, sans-serif",
     monospace: "Menlo, monospace",
   },
+  fontSizes: [14, 16, 18, 24, 36, 48, 100],
 };
