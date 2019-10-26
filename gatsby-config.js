@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Official Website for FANGA`,
+    description: `This is the official website for producer and DJ, FANGA.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -15,12 +15,28 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Official Website for FANGA`,
+        description: `This is the official website for producer and DJ, FANGA.`,
+        icon: `src/images/facivon.png`,
+        short_name: `FANGA`,
+        start_url: `/`,
+        background_color: `#F4F4F4`,
+        theme_color: `#32D8D6`,
+        display: `standalone`,
+        lang: `en`,
+      },
+    },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-mdx`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [{ family: `Open Sans`, variants: ["400", [700]] }],
+        google: {
+          families: ["Open Sans"],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
