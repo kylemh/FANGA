@@ -938,6 +938,18 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@innocuous/components@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@innocuous/components/-/components-2.1.0.tgz#551dced843146fcccf911da6f894b77f4fc64861"
+  integrity sha512-0rNhyz469DdJ55VuQHXirxBCoUP+PB8jvF/P4AHn1ZPScAJx6unXd8VMr1yxadQUfFHnlPyPMyCBzux7ZNIfKA==
+  dependencies:
+    "@innocuous/hooks" "^2.1.0"
+
+"@innocuous/hooks@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@innocuous/hooks/-/hooks-2.1.0.tgz#8d0384e1778250b98f6d82e20cce2d9964da775f"
+  integrity sha512-L7XKnXLXFbwhPT1ROezeXWm7OAbv5nHAPKxeaa4gXpxWHDvMJT/5jAgAAUleTHe0d021jBCYT/+sZQpsx/zi5g==
+
 "@jimp/bmp@^0.6.8":
   version "0.6.8"
   resolved "https://registry.yarnpkg.com/@jimp/bmp/-/bmp-0.6.8.tgz#8abbfd9e26ba17a47fab311059ea9f7dd82005b6"
