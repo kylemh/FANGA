@@ -4,6 +4,7 @@ const primaryColor = "#32D8D6";
 const primaryTransition = "all 0.3s linear";
 
 export default {
+  initialColorModeName: "default",
   ...deep,
   colors: {
     // Doing modes enables global styles being applied
