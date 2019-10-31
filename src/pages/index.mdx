@@ -1,12 +1,20 @@
-import { Box } from "@theme-ui/components";
+import { Flex } from "@theme-ui/components";
 import { Layout, SEO, SocialMediaLinks } from "../components";
 
 export default ({ children }) => <Layout>{children}</Layout>; // Layout
 
 <SEO title="FANGA" />;
 
-<Box p={4} m={4}>
-  <h1>FANGA</h1>
-
+<Flex
+  p={4}
+  m={4}
+  sx={{
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    height: "90vh",
+  }}
+>
+  <AnimatedTitle />
   <SocialMediaLinks />
-</Box>
+</Flex>
