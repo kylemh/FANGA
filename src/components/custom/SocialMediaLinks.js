@@ -6,7 +6,6 @@ import { LinkButton } from "../";
 import FacebookLogo from "../../images/facebook.svg";
 import InstagramLogo from "../../images/instagram.svg";
 import SoundcloudLogo from "../../images/soundcloud.svg";
-import TwitterLogo from "../../images/twitter.svg";
 
 const socialMediaVariants = {
   Soundcloud: {
@@ -14,20 +13,16 @@ const socialMediaVariants = {
     icon: SoundcloudLogo,
   },
   Facebook: {
-    url: "https://facebook.com/bgf5676",
+    url: "https://facebook.com/DJFANGA1",
     icon: FacebookLogo,
   },
-  Twitter: {
-    url: "https://twitter.com/bgf5676",
-    icon: TwitterLogo,
-  },
   Instagram: {
-    url: "https://instagram.com/bgf5676",
+    url: "https://instagram.com/fangaofficial",
     icon: InstagramLogo,
   },
 };
 
-const responsiveSizes = ['25px', '30px', '40px'];
+const responsiveSizes = ["25px", "30px", "40px"];
 
 const SocialMediaLinks = () => {
   const links = Object.keys(socialMediaVariants).map((variantName) => {
