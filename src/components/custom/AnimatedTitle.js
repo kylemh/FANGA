@@ -1,21 +1,32 @@
-import React, { useEffect, useState } from "react";
-import { animated } from "react-spring";
+/** @jsx jsx */
+import { jsx } from "theme-ui";
+import { animated, useTrail } from "react-spring";
 import { Flex } from "@theme-ui/components";
 
-const AnimatedTitle = () => {
-  const [isMounted, setMounted] = useState(false);
+const AnimatedTitle = ({ title = "FANGA" }) => {
+  const characters = Array.from(title);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const config = { mass: 10, tension: 400, friction: 200 };
 
-  const characters = ["F", "A", "N", "G", "A"];
+  const trail = useTrail(characters.length, {
+    config,
+    opacity: 1,
+    x: 0,
+    height: 80,
+    from: { opacity: 0, x: 20, height: 0 },
+  });
 
   return (
-    <h1 sx={{ justifyContent: "center" }}>
+    <Flex sx={{ justifyContent: "center" }}>
       <h1>
-        {characters.map((character) => (
-          <animated.span key={character}>{character}</animated.span>
+        {trail.map(({ x, height, ...rest }, index) => (
+          <animated.span
+            key={`${index}${characters[index]}`}
+            style={{ ...rest, transform: x.interpolate((x) => `translate3d(0,${x}px,0)`) }}
+            sx={{ variant: "styles.h1" }}
+          >
+            {characters[index]}
+          </animated.span>
         ))}
       </h1>
     </Flex>

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Box } from "@theme-ui/components"
+import { Box } from "@theme-ui/components";
 
 const LinkButton = ({ variant = "primary", href, sx, ...props }) => {
   const isExternalLink = href.startsWith("http");

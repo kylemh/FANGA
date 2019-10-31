@@ -1,5 +1,3 @@
-import React from "react";
-
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Flex } from "@theme-ui/components";
@@ -29,17 +27,15 @@ const socialMediaVariants = {
   },
 };
 
+const responsiveSizes = ['25px', '30px', '40px'];
+
 const SocialMediaLinks = () => {
   const links = Object.keys(socialMediaVariants).map((variantName) => {
     const Icon = socialMediaVariants[variantName].icon;
 
     return (
-      <LinkButton
-        href={socialMediaVariants[variantName].url}
-        key={variantName}
-        mx={1}
-      >
-        <Icon style={{ width: "30px", height: "30px" }} />
+      <LinkButton href={socialMediaVariants[variantName].url} key={variantName} mx={1}>
+        <Icon sx={{ width: responsiveSizes, height: responsiveSizes }} />
         <ScreenReaderOnly>{variantName}</ScreenReaderOnly>
       </LinkButton>
     );
