@@ -1,16 +1,12 @@
 import { Box } from "@theme-ui/components";
-import { ScreenReaderOnly } from "@innocuous/components";
-import SoundcloudLogo from "../images/soundcloud.svg";
-import { Layout, LinkButton, SEO } from "../components";
+import { Layout, SEO, SocialMediaLinks } from "../components";
 
 export default ({ children }) => <Layout>{children}</Layout>; // Layout
+
 <SEO title="FANGA" />;
 
 <Box p={4} m={4}>
   <h1>FANGA</h1>
 
-  <LinkButton href="https://soundcloud.com/bgf5676">
-    <SoundcloudLogo style={{ width: '30px', height: '30px' }} />
-    <ScreenReaderOnly>Soundcloud</ScreenReaderOnly>
-  </LinkButton>
+  <SocialMediaLinks />
 </Box>
