@@ -1,6 +1,6 @@
 import { deep } from "@theme-ui/presets";
 
-const primaryColor = "#32D8D6";
+const primaryColor = "#007BBD";
 const primaryTransition = "all 0.3s linear";
 
 export default {
